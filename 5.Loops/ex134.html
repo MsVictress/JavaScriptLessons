@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        "use strict";
+        
+        let arr = [10, 20, 30, 40, 21, 32, 51], sum = 0;
+        for(let i = 0; i <= arr.length; i++) { 
+            let elem = arr[i];
+            if(String(elem)[0] == 1 || String(elem)[0] == 2) {
+                sum = sum + arr[i];
+            }
+        }           
+        console.log(sum);
+        
+    </script>
+</body>
+</html>

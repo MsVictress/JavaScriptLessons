@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        "use strict";
+        
+        let arr = ['a', 'b', 'c', 'd', 'e'];
+        let flag1 = false;
+        for (let elem of arr) {
+            if (elem == 'c') {
+                flag1 = true;
+                break;
+            }
+        }
+        if (flag1 === true) {
+            console.log('+++');
+        } 
+        else {
+            console.log('---');
+        }
+
+        let num = 21;
+        let flag2 = true;
+        for(let i = 2; i < num; i++) {
+            if (num % i == 0) {
+                flag2 = false;
+                break;
+            }
+        }
+        if (flag2 === true) {
+            console.log('Simple');
+        } 
+        else {
+            console.log('Not simple');
+        }
+
+    </script>
+</body>
+</html>
