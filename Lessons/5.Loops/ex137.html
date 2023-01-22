@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        "use strict";
+        
+        for(let i = 1; i <= 100; i++) {
+            console.log(i);
+        }
+
+        for(let i = 100; i >= 1; i--) {
+            console.log(i);
+        }
+
+        for(let i = 1; i <= 100; i++) {
+            if(i % 2 == 0) {
+                console.log(i);
+            }
+        }
+
+        let arr1 = [];
+        for(let i = 1; i <= 10; i++) {
+            arr1.push('x');
+        }            
+        console.log(arr1);
+
+        let arr2 = [];
+        for(let i = 1; i <= 10; i++) {
+            arr2.push(i);
+        }            
+        console.log(arr2);
+
+        let arr3 = [2, 4, 6, 8, 12, 14, 16, 18];
+        for(let i = 0; i <= arr3.length; i++){
+            if(arr3[i] > 0 && arr3[i] < 10) {
+                console.log(arr3[i]);
+            }
+        }
+
+        let arr4 = [1, 2, 3, 4, 5];
+        let res1 = ('Нет');
+        for (let elem of arr4) {
+            if (elem === 5) {
+                res1 = 'Есть';
+                break;
+            } 
+        }
+        console.log(res1);
+
+        let arr5 = [1, 2, 3, 4, 5];
+        let sum1 = 0;
+        for (let i = 0; i <= arr5.length; i++) {
+            sum1 = sum1 + i;
+        }
+        console.log(sum1);
+
+        let arr6 = [1, 2, 3, 4, 5];
+        let res2 = 1;
+        let sum2 = 0;
+        for (let i = 0; i < arr6.length; i++) {
+            res2 = arr6[i] * arr6[i];
+            sum2 = sum2 + res2;
+        }
+        console.log(sum2);
+
+        let arr7 = [1, 2, 3, 4, 5];
+        let sum3 = 0;
+        let res3;
+        for (let i = 0; i <= arr7.length; i++) {
+            sum3 = sum3 + i;
+            res3 = sum3 / arr7.length;
+        }
+        console.log(res3);
+
+        let num1 = 5;
+        let res4 = 1;
+        for(let i = 1; i <= num1; i++) {
+            res4 = res4 * i;
+        }
+        console.log(res4);
+
+        let arr8 = [];
+        for(let i = 10; i >= 1; i--) {
+            arr8.push(i);
+        }            
+        console.log(arr8);
+
+        let arr9 = [1, -2, 3, 4, -5];
+        let sum4 = 0;
+        for(let i = 0; i <= arr9.length; i++) {
+            if(arr9[i] >= 0) {
+                sum4 = sum4 + arr9[i];
+            }
+        }
+        console.log(sum4);
+
+        let arr10 = [10, 20, 30, 50, 235, 3000];
+        for (let i = 0; i <= arr10.length; i++) {
+            if (String(arr10[i])[0] == '1' || String(arr10[i])[0] == '2' || String(arr10[i])[0] == '5') {
+                console.log(arr10[i]);
+            }
+        }
+
+        let arr11 = [1, 2, 3, 4, 5];
+        for(let i = arr11.length - 1; i >= 0; i--) {
+            console.log(arr11[i]);
+        }
+
+        let arr12 = [0, 1, 2, 5, 6, 7];
+        for(let i = 0; i <= arr12.length; i++) {
+            let elem = arr12[i];
+            if (elem === i) {
+                console.log(arr12[i]);
+            }
+        }
+
+        let arr13 = [1, 2, 3, 4, 5];
+        for(let i = 0; i <= arr13.length - 1; i++) {
+            document.write(`${arr13[i]}<br>`)
+        }
+
+        let arr14 = [1, 2, 3, 4, 5];
+        for(let i = 0; i <= arr14.length - 1; i++) {
+            document.write(`<p>${arr14[i]}</p>`)
+        }
+
+        let arr15 = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
+        for(let i = 0; i <= arr15.length - 1; i++) {
+            if(i > 4) {
+                document.write(` <b>${arr15[i]}</b> `)
+            }
+            else {
+                document.write(` ${arr15[i]} `)
+            }
+        }
+
+        let arr16 = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
+        let day = 6;
+        for(let i = 0; i <= arr16.length - 1; i++) {
+            if(i == day) {
+                document.write(` <i>${arr16[i]}</i> `)
+            }
+            else {
+                document.write(` ${arr16[i]} `)
+            }
+        }
+
+        let obj1 = {
+            employee1: 100,
+            employee2: 200,
+            employee3: 300,
+            employee4: 400,
+            employee5: 500,
+            employee6: 600,
+            employee7: 700,
+        };
+        for(let key in obj1) {
+            obj1[key] = obj1[key] + obj1[key] * 0.1;
+        }
+        console.log(obj1);
+
+        let obj2 = {
+            employee1: 100,
+            employee2: 200,
+            employee3: 300,
+            employee4: 400,
+            employee5: 500,
+            employee6: 600,
+            employee7: 700,
+        };
+        for(let key in obj2) {
+            if(obj2[key] <= 400) {
+                obj2[key] = obj2[key] + obj2[key] * 0.1;
+            }
+        }
+        console.log(obj2);
+
+        let arr17 = [1, 2, 3, 4, 5];
+        let arr18 = [6, 7, 8, 9, 10];
+        let obj3 = {};
+        for(let i = 0; i < arr17.length; i++) {
+            obj3[arr17[i]] = arr18[i];
+        }
+        console.log(obj3);
+
+        let obj4 = {1: 6, 2: 7, 3: 8, 4: 9, 5: 10};
+        let sum5 = 0;
+        let sum6 = 0;
+        let res5 = 0;
+        for(let key in obj4) {
+            sum5 = sum5 + +key;
+            sum6 = sum6 + obj4[key];
+            res5 = sum5 / sum6;
+        }            
+        console.log(res5);
+
+        let obj5 = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5};
+        let arr19 = [];
+        let arr20 = [];
+        for(let key in obj5) {
+            arr19.push(key);
+            arr20.push(obj5[key]);
+        }
+        console.log(arr19);
+        console.log(arr20);
+
+        let obj6 = {
+            1: 125,
+            2: 225,
+            3: 128,
+            4: 356,
+            5: 145,
+            6: 281,
+            7: 452,
+        };
+        let arr21 = [];
+        for(let key in obj6) {
+            if(String(obj6[key])[0] === '1' || String(obj6[key])[0] === '2') {
+                arr21.push(obj6[key]);
+            }
+        }
+        console.log(arr21);
+
+        let arr22 = ['a', 'b', 'c', 'd', 'e'];
+        let obj7 = {};
+        for(let i = 0; i <= arr22.length - 1; i++) {
+            obj7[i + 1] = arr22[i];
+        }
+        console.log(obj7);
+
+        let arr23 = ['a', 'b', 'c', 'd', 'e'];
+        let obj8 = {};
+        for(let i = 0; i <= arr23.length - 1; i++) {
+            obj8[arr23[i]] = i + 1;
+        }
+        console.log(obj8);
+                                
+    </script>
+</body>
+</html>

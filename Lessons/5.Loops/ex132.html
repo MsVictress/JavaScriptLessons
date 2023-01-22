@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        "use strict";
+        
+        let arr = ['a', 'b', 'c', 'a', 'a', 'b'];
+        let count = {};
+        for (let elem of arr) {
+            if (count[elem] === undefined) {
+                count[elem] = 1;
+            } 
+            else {
+                count[elem]++;
+            }
+        }
+        console.log(count);
+
+    </script>
+</body>
+</html>
